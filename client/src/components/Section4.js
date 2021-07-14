@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React, { useState, useEffect } from 'react';
 
 import Carousel from './Carousel';
@@ -30,7 +32,8 @@ const Section4 = () => {
 
   return (
     <>
-      <section className='Section4' id='design'>
+      <section className='Section4'>
+        <a className='anchor' id='design'></a>
         <div className='Section4__heading'>
           <h1>Design</h1>
         </div>
