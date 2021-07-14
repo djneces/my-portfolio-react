@@ -1,0 +1,87 @@
+@import './../assets/styles/colors';
+@import './../assets/styles/utils';
+
+
+.Header {
+    width: 100%;
+    height: $margin-top-header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: $color-primary;
+    color: $color-primary-light;
+    word-spacing: 5px;
+    font-size: 1.1rem;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border: 1px solid $color-muted;
+
+    &__column {
+
+        &-1 {
+            span {
+                font-size: 1.5rem
+            }
+        }
+
+        &-2 {
+            i {
+                margin-right: 1.5rem;
+                cursor: pointer;
+
+                &:hover {
+                    color: $color-orange;
+                }
+            }
+
+            @media (max-width: 720px) {
+                width: 7% !important;
+                min-width: initial !important;
+            }
+
+            @media (max-width: 510px) {
+                padding: 1.5rem 0.5rem;
+            }
+        }
+
+        &-3 {
+
+            li {
+                font-size: 1rem;
+                list-style-type: none;
+                text-transform: uppercase;
+                margin-right: 2rem;
+                cursor: pointer;
+
+                &:hover {
+                    color: $color-orange;
+                }
+            }
+        }
+
+    }
+
+    &>div:first-of-type {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 720px) {
+            display: none;
+        }
+    }
+
+    &>div:not(:first-of-type),
+    nav {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        @media (max-width: 510px) {
+            width: 72%;
+        }
+    }
+
+}

@@ -1,0 +1,114 @@
+@import './../assets/styles/colors';
+@import './../assets/styles/utils';
+
+.Section1 {
+    margin-top: calc(#{$margin-top-header} + 8vh);
+    height: 60vh;
+    min-height: 570px;
+    width: 100%;
+    max-width: 1200px;
+    color: $color-primary-light;
+    display: flex;
+    border: 1px solid $color-orange;
+
+    @media (max-width: 720px) {
+        height: 50vh;
+        min-height: initial;
+    }
+
+    @media (max-width: 375px) {
+        height: 65vh;
+    }
+
+    &__column {
+        &-1 {
+            span {
+                text-transform: uppercase;
+                writing-mode: vertical-lr;
+                transform: rotate(180deg);
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                font-size: 1.5rem;
+                letter-spacing: 2px;
+                padding-top: 2rem;
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        &-2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &--introduction {
+                div {
+                    line-height: 0.8;
+
+                    span {
+                        font-weight: bold;
+                        font-size: 3rem;
+                        display: block;
+
+                        &:nth-of-type(2) {
+                            font-weight: 300;
+                            font-size: 1rem
+                        }
+
+                        &:nth-of-type(3) {
+                            text-align: right;
+                        }
+                    }
+
+                    @media (max-width: 720px) {
+                        width: 50%;
+                    }
+
+                    @media (max-width: 375px) {
+                        width: 100%;
+                    }
+                }
+
+                p {
+                    margin-top: 5rem;
+                    font-weight: 300;
+                }
+            }
+
+            &--skills {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                max-width: 270px;
+
+                i {
+                    font-size: 1.5rem;
+                }
+            }
+
+        }
+
+        &-3 {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .Image {
+                width: 55%;
+                height: 35vw;
+                max-height: 420px;
+                margin-right: 10%;
+
+                img {
+
+                    object-position: top;
+
+                }
+            }
+        }
+    }
+
+}

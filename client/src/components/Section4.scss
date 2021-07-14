@@ -1,0 +1,170 @@
+@import './../assets/styles/colors';
+@import './../assets/styles/utils';
+
+.Section4 {
+    margin-top: 8vh;
+    height: 52vh;
+    min-height: 600px;
+    width: 100%;
+    max-width: 1200px;
+    color: $color-primary-light;
+    display: flex;
+    border: 1px solid $color-muted;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 900px) {
+        min-height: 550px;
+    }
+
+    &__heading {
+        width: 100%;
+        min-height: 150px;
+        border-bottom: 1px solid $color-muted;
+
+        h1 {
+            text-align: center;
+            font-size: 7rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        height: 75%;
+        width: 100%;
+
+        @media (max-width: 900px) {
+            height: 73%;
+        }
+
+        &-column {
+            &-1 {
+                &>span {
+                    text-transform: uppercase;
+                    writing-mode: vertical-lr;
+                    transform: rotate(180deg);
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    font-size: 1.5rem;
+                    letter-spacing: 2px;
+                    padding-top: 2rem;
+                    height: 100%;
+                    width: 100%;
+
+                    span {
+                        margin-top: 1rem;
+                        font-size: 0.8rem;
+                        text-transform: initial;
+                    }
+                }
+            }
+
+            &-2 {
+
+                &>div {
+                    &>div {
+                        border: 1px solid $color-muted;
+                        text-transform: uppercase;
+                        padding: 0.5rem 1rem;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        &.active {
+                            border: 1px solid $color-orange;
+                        }
+
+                        span {
+                            cursor: pointer;
+                        }
+
+                        &:hover {
+                            border: 1px solid lighten($color-muted, 20);
+
+                            span,
+                            i {
+                                transform: translateX(2px);
+                            }
+                        }
+                    }
+                }
+
+                &--description {
+                    margin-bottom: 3rem;
+                    line-height: 1.4;
+                    height: 460px;
+
+                    @media (max-width: 375px) {
+                        height: initial;
+                    }
+
+                    h3 {
+                        font-size: 2rem;
+                        color: $color-orange;
+                        margin-top: 1rem;
+                    }
+
+                    h4 {
+                        margin-bottom: 2rem;
+                    }
+
+                    p {
+                        margin-bottom: 2rem;
+
+                        &:last-of-type {
+                            font-size: 0.8rem;
+                        }
+                    }
+
+                    .Button {
+                        width: 6rem;
+
+                        span {
+                            margin-right: 0.5rem;
+                        }
+
+                    }
+                }
+            }
+
+            &-3 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-bottom: 3rem !important;
+
+                .alice-carousel {
+                    width: 100%;
+
+                    &>div {
+                        height: 100%;
+                        width: 100%;
+                    }
+
+                    img {
+                        object-fit: contain;
+                    }
+
+                    &__dots {
+                        margin: 15px 3px 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__responsiveCarousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: $color-primary;
+    }
+}
