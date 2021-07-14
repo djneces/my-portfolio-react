@@ -32,7 +32,7 @@ export const PROJECTS = {
     description:
       'Custom API build in Express, MongoDb integration, Passport Authentication, MapBox map and Geocoding integration, Cloudinary integration, React and Redux frontend, Custom redux form input incl. validation (client & server), Sendgrid integration',
     features:
-      'Registration new user (username & password), Login & edit & delete user, Create & delete & edit campgrounds and reviews, Upload & delete images, Receiving a welcome email upon registration, Showing campgrounds on a interactive map, Responsive Ipad+',
+      'Registration new user (username & password), Login & edit & delete user, Create & delete & edit campgrounds and reviews, Upload & delete images, Receiving a welcome email upon registration, Showing campgrounds on an interactive map, Responsive Ipad+',
     technology: 'HTML5, CSS3, Sass, Express, MongoDb, React, Redux',
     url: 'https://evening-fortress-14705.herokuapp.com',
     github: 'https://github.com/djneces/react-CycloCampsApp',
