@@ -18,12 +18,4 @@
             height: 100%;
         }
     }
-
-    &__dots-item {
-        background-color: $color-primary-light;
-
-        &__active {
-            background-color: $color-orange;
-        }
-    }
 }
