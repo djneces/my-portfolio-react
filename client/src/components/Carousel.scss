@@ -22,7 +22,7 @@
     &__dots-item {
         background-color: $color-primary-light !important;
 
-        &__active {
+        &.__active {
             background-color: $color-orange !important;
         }
     }
