@@ -24,10 +24,10 @@ const Section1 = () => {
             <span>Stack</span>
           </div>
           <p>
-            I'm a devoted self-taught full-stack web developer. As of now I've
-            been intensively studying for a year full-time. I love what I do and
-            my main goal is to constantly improve and widen my understanding to
-            evolve into a skilled valuable web developer.
+            I'm a devoted self-taught full-stack web developer. I focus mainly
+            on React/Redux and MERN stack. I love what I do and my main goal is
+            to constantly improve and widen my understanding to evolve into a
+            skilled and valuable web developer.
           </p>
         </div>
         <div className='Section1__column-2--skills'>

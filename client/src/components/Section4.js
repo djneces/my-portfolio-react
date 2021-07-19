@@ -33,7 +33,7 @@ const Section4 = () => {
   return (
     <>
       <section className='Section4'>
-        <a className='anchor' id='design'></a>
+        <a className='anchor' id='design-link'></a>
         <div className='Section4__heading'>
           <h1>Design</h1>
         </div>
