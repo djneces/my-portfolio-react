@@ -13,7 +13,7 @@ const Header = () => {
           <i className='fab fa-twitter'></i>
         </a>
         <a
-          href='https://www.linkedin.com/in/ji%C5%99%C3%AD-ne%C4%8Des%C3%A1nek-32287377/'
+          href='https://www.linkedin.com/in/ji%C5%99%C3%AD-ne%C4%8Des%C3%A1nek/?locale=en_US'
           rel='noreferrer'
           target='_blank'
         >
