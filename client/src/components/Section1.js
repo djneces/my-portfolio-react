@@ -17,17 +17,17 @@ const Section1 = () => {
       <div className='Column-2 Section1__column-2'>
         <div className='Section1__column-2--introduction'>
           <div>
-            <span>Full</span>
+            <span>Front</span>
             <br></br>
             <span>Passionate web developer & designer</span>
             <br></br>
-            <span>Stack</span>
+            <span>End</span>
           </div>
           <p>
-            I'm a devoted self-taught full-stack web developer. I focus mainly
-            on React/Redux and MERN stack. I love what I do and my main goal is
-            to constantly improve and widen my understanding to evolve into a
-            skilled and valuable web developer.
+            I'm a devoted self-taught front-end web developer. I focus mainly on
+            React/Redux. I love what I do and my main goal is to constantly
+            improve and widen my understanding to evolve into a skilled and
+            valuable web developer.
           </p>
         </div>
         <div className='Section1__column-2--skills'>
@@ -38,7 +38,6 @@ const Section1 = () => {
           <i className='fab fa-js-square'></i>
           <i className='fab fa-react'></i>
           <i className='devicon-express-original'></i>
-          <i className='fab fa-node-js'></i>
           <i className='devicon-mongodb-plain-wordmark'></i>
           <i className='devicon-firebase-plain'></i>
         </div>
